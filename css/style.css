@@ -12,9 +12,9 @@ html{
 body{
     margin: 0 0 0;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    background-color: rgb(184, 184, 241);
-    color: white;
+    font-size: 18px;
+    background-color: rgb(108, 108, 141);
+    color: rgb(51, 49, 49);
 }
 h1,h2,h3,h4{
     color: #fff;
@@ -62,5 +62,87 @@ img{
     display: grid;
     gap: 1.5rem;
     
-
 }
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index:unset;
+    background-color: rgb(240, 235, 240);
+}
+
+/*========= Nav ========*/
+.nav{
+    max-width: 968px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo,
+.nav__toggle {
+    color: rgb(44, 42, 42);
+    font-weight: 25px;
+}
+.nav__logo:hover{
+    color: rgb(99, 97, 107);
+}
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.nav__toggle:hover{
+    color: rgb(223, 219, 233);
+}
+
+@media screen and (max-width: 767px){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(248, 248, 248);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0, 0, 15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+}
+
+.nav__list{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 19px;
+    color: rgb(22, 22, 22);
+    font-weight: 25px;
+}
+.nav__link:hover{
+    color: rgb(165, 163, 170);
+}
+
+.nav__icon{
+    font-size: 1.2rem;
+}
+.nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.nav__close:hover{
+    color: rgb(121, 121, 121);
+}
+
+/* Show Menu */
+ .show-menu{
+     bottom: 0;
+ }
