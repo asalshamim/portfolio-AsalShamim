@@ -5,3 +5,62 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: rgb(184, 184, 241);
+    color: white;
+}
+h1,h2,h3,h4{
+    color: #fff;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*====== Reusable css classes =========*/
+
+.section{
+    padding: 2rem;
+}
+.section__title{
+    font-size: 12px;
+}
+.section__subtitle{
+    display: block;
+    font-size: small;
+    margin-bottom: 3px;
+}
+.section__title,
+.section__subtitle{
+    text-align: center;
+
+}
+
+/*======= Layout ======= */
+
+.container{
+    max-width: 768px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    
+
+}
