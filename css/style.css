@@ -35,7 +35,7 @@ img{
 /*====== Reusable css classes =========*/
 
 .section{
-    padding: 2rem;
+    padding: 2rem 0 4rem;
 }
 .section__title{
     font-size: 12px;
