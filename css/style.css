@@ -13,7 +13,7 @@ body{
     margin: 0 0 0;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 18px;
-    background-color: rgb(179, 171, 171);
+    background-color: rgb(211, 207, 207);
     color: rgb(51, 49, 49);
 }
 h1,h2,h3,h4{
@@ -86,7 +86,7 @@ img{
     font-weight: 25px;
 }
 .nav__logo:hover{
-    color: rgb(99, 97, 107);
+    color: rgb(108, 99, 141);
 }
 .nav__toggle{
     font-size: 1.1rem;
@@ -175,7 +175,7 @@ img{
 
  .home__blob{
      width: 200px;
-     fill:rgb(178, 175, 200)
+     fill: #baaadd;
  }
 
  .home__blob-img{
@@ -244,4 +244,13 @@ img{
  .button--flrx {
      display: inline-flex;
      align-items: center;
+ }
+
+ /*======= About ======== */
+
+ .about__img{
+     width: 200px;
+     border-radius: 5rem;
+     justify-self: center;
+     align-self: center;
  }
