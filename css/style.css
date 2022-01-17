@@ -199,7 +199,7 @@ img{
      margin-bottom: 25px;
  }
  .home__scroll{
-    /* display: none;*/
+     display: none;
  }
 
  .home__scroll-button{
@@ -235,4 +235,13 @@ img{
 
  .button:hover{
      background-color: rgb(119, 114, 160);
+ }
+ .botton__icon{
+     font-size: 1.25rem;
+     margin-left: 45px;
+     transition: .3s;
+ }
+ .button--flrx {
+     display: inline-flex;
+     align-items: center;
  }
